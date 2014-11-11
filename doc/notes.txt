@@ -1,0 +1,35 @@
+Entities
+--------
+Patron
+    first name
+    last name
+    dietary restrictions
+Restaurant
+Item
+Ingredient
+    restriction
+
+Relationships
+-------------
+Visited(Patron, Restaurant)
+    date
+    duration
+    tip
+Ordered(Patron, Restaurant, Item)
+    date
+Serves(Restaurant, Item)
+    day
+    price
+Contains(Item, Ingredient)
+
+
+NOTES
+-----
+
+dietary restrictions
+    meat
+    gluten
+    fish
+    dairy
+    spicy
+    nut
