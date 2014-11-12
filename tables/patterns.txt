@@ -1,0 +1,7 @@
+Customer satisfaction metric is a function of tip, number of customers, revenue, and customer options
+
+More restrictions a customer has, the fewer restaurants he frequents
+The more varied ingredients a restaurant serves, the more options customers have
+The more varied ingredients a restaurant serves, the higher the tips
+Restaurants that serve more unique items have more customers
+On weekends, more orders are placed

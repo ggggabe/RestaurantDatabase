@@ -1,0 +1,11 @@
+order_id,firstname,lastname,tip,restaurant_name,date
+1,Terence,Washington,4.22,Vietnam Restaurant,2014-10-23
+2,Jerry,Mclaughlin,6.99,Vietnam Restaurant,2014-10-23
+3,Blanca,Caldwell,7,Vietnam Restaurant,2014-10-23
+4,Beverly,Myers,9,Chops and Ribs,2014-10-30
+5,Maxine,Stewart,20,Chops and Ribs,2014-11-01
+6,Marlon,Morton,13.25,Chops and Ribs,2014-11-02
+7,Leslie,Fields,23.21,Molinarinari,2014-11-02
+8,Debra,Nash,1.44,Molinarinari,2014-11-02
+9,Chris,Gibbs,11.55,Molinarinari,2014-11-11
+10,Adrienne,Moore,5,Molinarinari,2014-11-11
