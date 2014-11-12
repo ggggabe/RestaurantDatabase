@@ -1,0 +1,20 @@
+Patron(firstname, lastname) [500]
+-- 4 orders each
+
+Restaurant(name) [50]
+
+Serves(restaurant_name, item_name, price)
+
+Item(name) [100]
+-- 4 ingredients each
+
+Ingredient(name) [50]
+
+Contains(item_name, ingredient_name)
+-- 400 tuples
+
+RestrictedBy(firstname, lastname, ingredient_name)
+
+Order(order_id, firstname, lastname, tip, restaurant_name, date) [2000]
+
+Ordered(order_id, item_name)

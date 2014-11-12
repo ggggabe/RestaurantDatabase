@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin 14pt
+\evensidemargin 14pt
+\textwidth 6in
+
+\input{/home/kevinsung/Dropbox/Academic/latexdefs}
+
+\begin{document}
+
+\begin{center}
+    \textbf{CS 336 Project Description} \\
+    Gabe Marquez and Kevin J. Sung
+\end{center}
+
+\begin{flushleft}
+    Scheme: Food\\
+    Audience: Restaurant owners\\
+    Goal: Help restaurants raise customer satisfaction and profits\\
+\end{flushleft}
+
+In addition to the core scheme, we have unique data about patrons' dietary restrictions
+(specifically, which ingredients they never consume),
+ingredients contained in items served by restaurants, and information associated
+with specific orders.
+
+Key to our database is the relation "Order", which contains the key "order\_id".
+With each order, we associate a patron, date, restaurant, and tip amount. Through
+the attribute "order\_id", we can access the table "Ordered", which lists
+the items associated with each order, i.e., what the unique patron associated with
+that order\_id ordered during that visit.
+
+To use this information to help restaurants maximize profit, we introduce the
+"Customer Satisfaction Metric" (CSM), which is a number associated with each restaurant
+on each day that is a measure of how satisfied its customers were on that day.
+The CSM is a function of the size of the tips received at the restaurant, the
+number of customers the restaurant had, the amount of money customers spent, and
+the options that customers had when eating at that restaurant (i.e., if the restaurant
+serves mainly dishes that contain meat that day, then vegetarians who visited the restaurant
+that day may not have had many options, and hence lowering the CSM). We look for
+trends in the CSM that will indicate restaurant practices which result in higher CSM,
+and hence more happy and loyal customers and higher profits.
+
+\end{document}
