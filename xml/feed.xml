@@ -1,0 +1,10 @@
+<?xml version = "1.0"?>
+<!ELEMENT Patron(firstname, lastname)>
+<!ELEMENT Restaurant(name)>
+<!ELEMENT Serves(restaurant_name, item_name, price)>
+<!ELEMENT Item(name)>
+<!ELEMENT Ingredient(name)>
+<!ELEMENT Contains(item_name, ingredient_name)>
+<!ELEMENT RestrictedBy(firstname, lastname, ingredient_name)>
+<!ELEMENT Order(order_id, firstname, lastname, tip, restaurant_name,date)>
+<!ELEMENT Ordered(order_id, item_name)>
