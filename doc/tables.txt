@@ -1,20 +1,33 @@
-Patron(firstname, lastname) [500]
--- 4 orders each
+Patron(#firstname, #lastname, veggie) [1000]
+    -- 5 orders each
 
-Restaurant(name) [50]
+Restaurant(#name) [50]
 
-Serves(restaurant_name, item_name, price)
+Serves(#restaurant_name, #item_name, price) [5000]
+    -- each restaurant serves 100 items
 
-Item(name) [100]
--- 4 ingredients each
+Item(#name, veggie) [1000]
+    -- 500 vegetarian items
 
-Ingredient(name) [50]
+Visit(#order_id, firstname, lastname, restaurant_name, tip, day) [5000]
 
-Contains(item_name, ingredient_name)
--- 400 tuples
+Ordered(#order_id, #item_name) [10000]
+    -- each order has 2 items
 
-RestrictedBy(firstname, lastname, ingredient_name)
+Reviewed(#restaurant_name, #firstname, #lastname, positive) [2500]
+    -- each restaurant has 50 reviews
 
-Order(order_id, firstname, lastname, tip, restaurant_name, date) [2000]
+-----------------------------
+Derived tables
+-----------------------------
 
-Ordered(order_id, item_name)
+CSM(#restaurant_name, #date)
+
+Veggie_factor(#restaurant_name, #date, value)
+    -- value is fraction of menu items that are vegetarian
+
+Yelp_factor(#restaurant_name, value)
+    -- value is proportion of Yelp! reviews that are positive
+
+Veggie_visits(#restaurant_name, #date, value)
+    -- value is proportion of visits that were from vegetarians

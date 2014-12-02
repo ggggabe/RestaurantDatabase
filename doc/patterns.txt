@@ -1,0 +1,22 @@
+Customer satisfaction metric is a function of tip, number of customers, revenue, and customer options
+
+More restrictions a customer has, the fewer restaurants he frequents
+The more varied ingredients a restaurant serves, the more options customers have
+The more varied ingredients a restaurant serves, the higher the tips
+Restaurants that serve more unique items have more customers
+On weekends, more orders are placed
+
+
+50% of customers are vegetarian
+-------------------------------
+Higher CSM (averaged over a month) corresponds to more positive Yelp! reviews
+    -- Therefore, CSM is an accurate predictor of good reviews
+    -- This is the main selling point
+Higher Yelp factor correlates with higher profits
+
+Lead up patterns:
+
+Vegetarians are more likely to leave a review than non-vegetarians
+Vegetarians are twice as likely to leave a negative review than non-vegetarians
+Restaurants that attract more vegetarians have higher profits
+    Restaurants with higher proportion of vegetarian items
