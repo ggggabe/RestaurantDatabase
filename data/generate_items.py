@@ -12,15 +12,15 @@ verbs_file.close()
 meat_file.close()
 veggie_file.close()
 
-meat_number = 500
-veggie_number = 500
-
 for i in range(len(verbs)):
     verbs[i] = verbs[i].strip()
 for i in range(len(meats)):
     meats[i] = meats[i].strip()
 for i in range(len(veggies)):
     veggies[i] = veggies[i].strip()
+
+meat_number = 500
+veggie_number = 500
 
 veggie_dishes = np.empty(veggie_number, dtype=object)
 meat_dishes = np.empty(meat_number, dtype=object)
@@ -43,3 +43,5 @@ for i in range(veggie_number):
     output.write(veggie_dishes[i]+',Y\n')
 for i in range(meat_number):
     output.write(meat_dishes[i]+',N\n')
+
+output.close()
