@@ -1,21 +1,26 @@
 Patron(#firstname, #lastname, veggie) [1000]
+    -- 500 vegetarians, 500 meat eaters
     -- 5 orders each
 
 Restaurant(#name) [50]
 
 Serves(#restaurant_name, #item_name, price) [5000]
-    -- each restaurant serves 100 items
+    -- each restaurant serves ~100 items
+    -- 10 restaurants are vegetarian, the rest have 0%-80% vegarian dishes
 
 Item(#name, veggie) [1000]
-    -- 500 vegetarian items
+    -- 500 vegetarian items, 500 meat items
 
 Visit(#order_id, firstname, lastname, restaurant_name, tip, day) [5000]
+    -- tip from meat eaters: $6 +- $1
+    -- tip from veggie eaters: ($3 +- $1) + vfactor*$10
 
 Ordered(#order_id, #item_name) [10000]
     -- each order has 2 items
 
-Reviewed(#restaurant_name, #firstname, #lastname, positive) [2500]
-    -- each restaurant has 50 reviews
+Reviewed(#restaurant_name, #firstname, #lastname, positive) [3500]
+    -- vegetarians review every restaurant they visit: 2500 reviews
+    -- meat eaters review 2 restaurants they visit: 1000 reviews
 
 -----------------------------
 Derived tables
