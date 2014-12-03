@@ -34,14 +34,13 @@ CREATE TABLE Visit (
 );
 CREATE TABLE Ordered (
     order_id    INT,
-    item_name   VARCHAR(50),
-    PRIMARY KEY (order_id)
+    item_name   VARCHAR(50)
 );
 CREATE TABLE Reviewed (
     restaurant_name VARCHAR(50),
     firstname       VARCHAR(20),
     lastname        VARCHAR(20),
-    positive        CHAR(1),
+    positive        INT,
     PRIMARY KEY (restaurant_name, firstname, lastname)
 );
 

@@ -10,13 +10,9 @@ def generate_tip(v_factor, veggie):
 
 def generate_review(v_factor, veggie):
     if veggie:
-        review = np.random.binomial(1, v_factor)
+        return np.random.binomial(1, v_factor)
     else:
-        review = np.random.binomial(1, .5)
-    if review == 1:
-        return 'P'
-    else:
-        return 'N'
+        return np.random.binomial(1, .5)
 
 p_file = open('Patron.csv')
 r_file = open('v_factor.csv')
@@ -117,14 +113,14 @@ for i in range(p):
 
         oid = oid+1
     if (veggie):
-        num_review = vpp
+        num_review = vpp - np.random.randint(0,5)
     else:
-        num_review = vpp/2
+        num_review = vpp/2 + 1 - np.random.randint(0,5)
     for j in range(num_review):
         rest_name = restaurants[r_indices[j]].split(',')[0]
         v_factor = r_dict[rest_name]
         review = generate_review(v_factor, veggie)
-        reviewfile.write(rest_name+','+p_array[i,0]+','+p_array[i,1]+','+review+'\n')
+        reviewfile.write(rest_name+','+p_array[i,0]+','+p_array[i,1]+','+str(review)+'\n')
 
 outfile.close()
 orderfile.close()

@@ -15,7 +15,7 @@ Visit(#order_id, firstname, lastname, restaurant_name, tip, day) [5000]
     -- tip from meat eaters: $6 +- $1
     -- tip from veggie eaters: ($3 +- $1) + vfactor*$10
 
-Ordered(#order_id, #item_name) [10000]
+Ordered(order_id, item_name) [10000]
     -- each order has 2 items
 
 Reviewed(#restaurant_name, #firstname, #lastname, positive) [15000]
