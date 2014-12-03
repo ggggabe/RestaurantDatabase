@@ -1,6 +1,6 @@
 Patron(#firstname, #lastname, veggie) [1000]
     -- 500 vegetarians, 500 meat eaters
-    -- 5 orders each
+    -- 20 visits each
 
 Restaurant(#name) [50]
 
@@ -18,9 +18,9 @@ Visit(#order_id, firstname, lastname, restaurant_name, tip, day) [5000]
 Ordered(#order_id, #item_name) [10000]
     -- each order has 2 items
 
-Reviewed(#restaurant_name, #firstname, #lastname, positive) [3500]
-    -- vegetarians review every restaurant they visit: 2500 reviews
-    -- meat eaters review 2 restaurants they visit: 1000 reviews
+Reviewed(#restaurant_name, #firstname, #lastname, positive) [15000]
+    -- vegetarians review every restaurant they visit: 10000 reviews
+    -- meat eaters review half the restaurants they visit: 5000 reviews
 
 -----------------------------
 Derived tables
