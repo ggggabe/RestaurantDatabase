@@ -18,8 +18,8 @@ for i in range(l):
     y[i] = float(w[2])
 
 plt.plot(x,y,'o')
-plt.title('Average CSM vs Yelp! factor')
+plt.title('Average CSM vs Yelp factor')
 plt.xlabel('Average CSM')
-plt.ylabel('Yelp! factor')
+plt.ylabel('Yelp factor')
 
 plt.savefig('plots/avg_csm_vs_yelp_factor.png')
