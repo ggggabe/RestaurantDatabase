@@ -2,10 +2,10 @@ import numpy as np
 
 def generate_tip(v_factor, veggie):
     if veggie:
-        base = np.random.normal(3.0,1.0)
+        base = np.random.normal(3.0,2.0)
         tip = base + v_factor*10.0
     else:
-        tip = np.random.normal(6.0,1.0)
+        tip = np.random.normal(6.0,2.0)
     return np.around(tip,2)
 
 def generate_review(v_factor, veggie):
