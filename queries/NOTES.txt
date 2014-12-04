@@ -1,0 +1,12 @@
+The titles of the sql files explain what the queries do, and the results are in the
+csv files of the same name. Plots are in the plots folder. Perhaps for the web interface,
+we can have boxes where you can do the following:
+
+    run the same exact queries in these files and display the results
+    input a restaurant name and date and get its csm for that day
+    input a restaurant and get its average tip, or v_factor, or yelp_factor, etc.
+
+The first one requries no interaction; I don't know how much interaction is required.
+If you have time you could make it so you can input restaurant names, etc, and substitute
+the inputs into the queries I wrote, or modified versions of them, to let the user
+retrieve specific information.
