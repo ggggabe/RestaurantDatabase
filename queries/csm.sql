@@ -31,6 +31,6 @@ select restaurant_name, veggie_count/total_count as v_factor from
     group by restaurant_name) c)
 ) j
 
-into outfile '/tmp/csm.csv'
+into outfile 'csm.csv'
 fields terminated by ','
 lines terminated by '\n';
