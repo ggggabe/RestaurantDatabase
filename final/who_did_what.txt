@@ -1,0 +1,2 @@
+Kevin Sung wrote the code that generated the database.
+Gabe Marquez is working on the website.
